@@ -1,0 +1,1251 @@
+@font-face {
+    font-family: 'Rubik Mono One';
+    src: url(/font/RubikMonoOne-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover{
+    transition-duration: 1s;
+    color: rgb(249, 97, 84);
+}
+p:hover{
+    transition-duration: 1s;
+    color: rgb(249, 97, 84);
+}
+.wrapper{
+    min-height: 100%;
+    display:grid;
+    grid-template: minmax(100px,auto) 1fr minmax(70px,auto) /1fr ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.header{
+    grid-area: header;
+    background-size: cover;
+    width: 100%;
+    background-image: url(/img/First-screen-photo.jpg);
+    height: 900px;
+}
+.main{
+    padding-top: 60px;
+    grid-area: main;
+    padding-bottom: 60px;
+}
+.footer{
+    grid-area: footer;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr / 20px minmax(auto, 740px) 120px 80px 1fr; 
+}
+.header_menu{
+    align-items: center;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 250px) 260px minmax(800px,auto) 1fr; 
+}
+.logo {
+    height: 75px;
+    margin-top: 10px;
+    grid-column: 2/3;
+}
+.logo img {
+    height: 75px;
+}
+.menu{
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+    grid-column: 4/5;
+}
+.partMenu{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 5px;
+}
+.strelka{
+    width: 100px;
+    height: 100px;
+    margin: 350px auto;
+    background-image: url(/icons/ugol.png);
+    background-size: contain;
+    animation: strelka 3s linear infinite;
+    animation-delay: 2s;
+}
+.text{
+    font-size: 46px;
+    color: white;
+    font-family: 'Rubik Mono One';
+}
+.text-block{
+    width: 745px;
+    height: 60px;
+    margin: 240px auto;
+}
+
+.text > span{
+    animation: fadein 7s linear infinite;
+
+
+    position: absolute;
+    font-size: 2.5vw;
+    color: white;
+}
+.text > span:nth-child(1){
+    margin-left: 0vw;
+    animation: anim1 3s linear infinite;
+    animation-delay: 1s;
+
+}
+.text > span:nth-child(2){
+    margin-left: 4.5vw;
+    
+    animation: second 3s linear infinite;
+    animation-delay: 2s;
+}
+.text > span:nth-child(3){
+    margin-left: 9vw;
+
+    
+    animation: third 3s linear infinite;
+    animation-delay: 3s;
+    
+}
+.text > span:nth-child(4){
+    margin-left: 13.5vw;
+
+    
+    animation: fourth 3s linear infinite;
+    animation-delay: 4s;
+}
+.text > span:nth-child(5){
+    margin-left: calc(4.5vw * 4);
+
+    animation: fifth 3s linear infinite;
+    animation-delay: 5s;
+    
+}
+
+.text > span:nth-child(6){
+    margin-left: calc(4.5vw * 5);
+    
+    animation: sixth 3s linear infinite;
+    animation-delay: 6s;
+}
+.text > span:nth-child(7){
+    margin-left: calc(4.5vw * 6);
+    animation: seventh 3s linear infinite;
+
+    animation-delay: 7s;
+}
+.text > span:nth-child(8){
+    margin-left: calc(4.5vw * 7);
+    
+    animation: eigth 3s linear infinite;
+    animation-delay: 8s;
+}
+.text > span:nth-child(9){
+    margin-left: calc(4.5vw * 8);
+    
+    animation: nine 3s linear infinite;
+    animation-delay: 9s;
+}
+.text > span:nth-child(10){
+    margin-left: calc(4.5vw * 9);
+    
+    animation: ten 3s linear infinite;
+    animation-delay: 10s;
+    
+    
+} 
+@keyframes strelka {
+    0%{
+        margin: 380px auto ;
+    }
+    25%{
+        margin: 355px auto ;
+
+    }
+    50%{
+        margin: 380px auto ;
+    }
+    75%{
+
+        margin: 355px auto ;
+    }
+    100%{
+        margin: 380px auto ;
+
+    }
+}
+
+@keyframes anim1 {
+    0%{
+        margin-left: -2vw;
+    }
+    25%{
+        margin-left: -1vw;
+    }
+    50%{
+        margin-left: 0vw;
+    }
+    75%{
+        margin-left: 1vw;
+    }
+    100%{
+        margin-left: 2vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes second {
+    0%{
+        margin-left: 2.5vw;
+    }
+    25%{
+        margin-left: 3.5vw;
+    }
+    50%{
+        margin-left: 4.5vw;
+    }
+    75%{
+        margin-left: 5.5vw;
+    }
+    100%{
+        margin-left: 6.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+
+@keyframes third {
+    0%{
+        margin-left: 7.5vw;
+    }
+    25%{
+        margin-left: 8.5vw;
+    }
+    50%{
+        margin-left: 9.5vw;
+    }
+    75%{
+        margin-left: 10.5vw;
+    }
+    100%{
+        margin-left: 11.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes fourth {
+    0%{
+        margin-left: 12.5vw;
+    }
+    25%{
+        margin-left: 13.5vw;
+    }
+    50%{
+        margin-left: 14.5vw;
+    }
+    75%{
+        margin-left: 15.5vw;
+    }
+    100%{
+        margin-left: 16.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes fifth {
+    0%{
+        margin-left: 16.5vw;
+    }
+    25%{
+        margin-left: 17.5vw;
+    }
+    50%{
+        margin-left: 18.5vw;
+    }
+    75%{
+        margin-left: 19.5vw;
+    }
+    100%{
+        margin-left: 20.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes sixth {
+    0%{
+        margin-left: 20.5vw;
+    }
+    25%{
+        margin-left: 21.5vw;
+    }
+    50%{
+        margin-left: 22.5vw;
+    }
+    75%{
+        margin-left: 23.5vw;
+    }
+    100%{
+        margin-left: 24.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes seventh {
+    0%{
+        margin-left: 24.5vw;
+    }
+    25%{
+        margin-left: 25.5vw;
+    }
+    50%{
+        margin-left: 26.5vw;
+    }
+    75%{
+        margin-left: 27.5vw;
+    }
+    100%{
+        margin-left: 28.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes eigth {
+    0%{
+        margin-left: 28.5vw;
+    }
+    25%{
+        margin-left: 29.5vw;
+    }
+    50%{
+        margin-left: 30.5vw;
+    }
+    75%{
+        margin-left: 31.5vw;
+    }
+    100%{
+        margin-left: 32.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes nine {
+    0%{
+        margin-left: 32.5vw;
+    }
+    25%{
+        margin-left: 33.5vw;
+    }
+    50%{
+        margin-left: 34.5vw;
+    }
+    75%{
+        margin-left: 35.5vw;
+    }
+    100%{
+        margin-left: 36.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+@keyframes ten {
+    0%{
+        margin-left: 36.5vw;
+    }
+    25%{
+        margin-left: 37.5vw;
+    }
+    50%{
+        margin-left: 38.5vw;
+    }
+    75%{
+        margin-left: 39.5vw;
+    }
+    100%{
+        margin-left: 40.5vw;
+        transofrm: translateX(42px);
+        opacity: 0;
+    }
+}
+
+
+
+
+.shops{
+    margin: 0 auto;
+    display: grid;
+    width: 1440px;
+    height: 850px;
+    grid-template: 185px minmax(auto,200px) minmax(auto,350px) / 1fr 350px 320px minmax(auto,350px) 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+   
+}
+.gourment{
+    background-image: url(/img/Shop-gourmet.jpg);
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 700px;
+    height: 415px;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,0.9);
+}
+.kartockhi1{
+    margin-left: 20px;
+    margin-top: 280px;
+    color: white;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 10px;
+}
+.png_gourment{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url(/icons/gourmet.png);
+    background-size: cover;
+}
+.kartockhi2{
+    margin-left: 25px;
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+    margin-top: 65px;
+}
+.png_carhartt{
+    margin-bottom: 15px;
+    height: 30px;
+    width: 35px;
+    background-image: url(/icons/carhartt.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.png_adidas{
+    margin-bottom: 15px;
+    height: 32px;
+    width: 42px;
+    background-image: url(/icons/adidas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.kartockhi3{
+    margin-left: 30px;
+    margin-top: 210px;
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+}
+.png_tendeep{
+    margin-bottom: -80px;
+    height: 110px;
+    width: 100px;
+    background-image: url(/icons/10deep.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.png_palace{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url(/icons/palace_aw.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.png_techpack{
+    margin-bottom: -10px;
+    height: 60px;
+    width: 60px;
+    background-image: url(/icons/tech-pack.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.kartockhi4{
+    margin-left: 30px;
+    margin-top: 248px;
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+}
+.kartockhi5{
+    margin-left: 30px;
+    margin-top: 240px;
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+}
+
+.carhartt{
+    background-image: url(/img/Shop-carhartt.jpg);
+    background-size: cover;
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    width: 350px;
+    height: 190px;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+}
+.adidas{
+    background-image: url(/img/Shop-adidas.jpg);
+    background-size: cover;
+
+    grid-row-start: 2;
+    grid-column-start: 4;
+    width: 350px;
+    height: 200px;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+}
+.tendeep{
+    background-image: url(/img/10Deep-sale.jpg);
+    background-size: cover;
+
+    grid-row-start: 3;
+    grid-column-start: 2;
+    width: 350px;
+    height: 360px;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+}
+.palace{
+    background-image: url(/img/Palace-aw.jpg);
+    background-size: cover;
+
+    grid-row-start: 3;
+    grid-column-start: 3;
+    width: 320px;
+    height: 360px;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+}
+.techpack{
+    background-image: url(/img/Tech-pack.jpg);
+    background-size: cover;
+
+    grid-row-start: 3;
+    grid-column-end: 5;
+    width: 350px;
+    height: 360px;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+}
+.contnent{
+    margin: 0 auto;
+    display: grid;
+    width: 1083px;
+    display: grid;
+    grid-template-columns: repeat(255px, 4) ;
+    grid-template-rows: 255px 255px;
+    
+    grid-template-areas: 
+    "tovar1 tovar2 tovar3 tovar4 "
+    "tovar5 tovar6 tovar7 tovar8";
+}
+
+.tovar1{
+    background-image: url(/img/Square-1.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.6);
+    grid-area: tovar1;
+}
+.tovar2{
+    background-image: url(/img/Square-2.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+
+    grid-area: tovar2;
+}
+.tovar3{
+    background-image: url(/img/Square-3.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+    grid-area: tovar3;
+}
+.tovar4{
+    background-image: url(/img/Square-4.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+    grid-area: tovar4;
+}
+.tovar5{
+    background-image: url(/img/Square-5.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);;
+    grid-area: tovar5;
+}
+.tovar6{
+    background-image: url(/img/Square-6.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+    grid-area: tovar6;
+}
+.tovar7{
+    background-image: url(/img/Square-7.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+    grid-area: tovar7;
+}
+.tovar8{
+    background-image: url(/img/Square-8.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 100px 30px rgba(0,0,0,0.9);
+    grid-area: tovar8;
+}
+.menu-footer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 2/3;
+    justify-content: space-between;
+}
+.icons{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 4/5;
+    justify-content: space-between;
+}
+.partMenu-footer{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rubik Mono One';
+}
+.instagram img{
+    height: 15px;
+    width: 15px;
+}
+.facebook img{
+    height: 15px;
+    width: 15px;
+}
+.twiter img{
+    height: 15px;
+    width: 15px;
+}
+.content-text{
+    position: absolute;
+    width: 200px;
+    height: 150px;   
+}
+.white{
+    position: relative;
+    left: 353px;
+    top: 212px;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 15px;
+}
+.red{
+    width: 350px;
+    transition: transform 2s;
+    position: relative;
+    left: 420px;
+    top: 215px;
+    font-size: 24px;
+    color: rgb(199, 59, 59);
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.red:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 1680px){
+    .header{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .text{
+        font-size: 34px;
+        margin: 0px auto;
+        width: 650px;
+    }
+}
+
+@media (max-width: 1280px){
+    .header{
+        width: 100%;
+        height: 665px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .strelka{
+        margin: 270px auto;
+    }
+    .text{
+        font-size: 32px;
+        margin: -80px auto;
+        width: 535px;
+    }
+    .menu{
+        width: 700px;
+    } 
+    @keyframes strelka {
+        0%{
+            margin: 270px auto ;
+        }
+        25%{
+            margin: 245px auto ;
+    
+        }
+        50%{
+            margin: 270px auto ;
+        }
+        75%{
+    
+            margin: 245px auto ;
+        }
+        100%{
+            margin: 270px auto ;
+    
+        }
+    }
+    .shops{
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    .contnent {
+        margin-left: 150px;
+        width: 970px;
+        grid-template-columns: repeat(3, 323px);
+        grid-template-rows: repeat(3, 323px);
+        grid-template-areas: 
+        "tovar1 tovar2 tovar3"
+        "tovar4 tovar5 tovar6"
+        "tovar7 tovar8 .";
+    }
+    .tovar1{grid-area: tovar1;}
+    .tovar2{grid-area: tovar2;}
+    .tovar3{grid-area: tovar3;}
+    .tovar4{grid-area: tovar4;}
+    .tovar5{grid-area: tovar5;}
+    .tovar6{grid-area: tovar6;}
+    .tovar7{grid-area: tovar7;}
+    .tovar8{grid-area: tovar8;}
+    .footer{
+        margin-left: 50px;
+        height: 100px;  
+        width: 970px;
+    }
+    .icons{
+        margin-left: 140px;
+        justify-content: space-around;
+        width: 80px;
+    }
+    .white{
+        position: relative;
+        left: 415px;
+        top: 380px;
+    }
+    .red{
+        position: relative;
+        width: 300px;
+        left: 455px;
+        top: 390px;
+        letter-spacing: 5px;
+    }
+}
+@media (max-width: 980px){
+    .header{
+        width: 100%;
+        height: 540px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text{
+        margin: -100px auto;
+    }
+    .text span{
+        font-size: 36px;
+    }
+    .menu{
+        width: 720px;
+    } 
+    @keyframes strelka {
+        0%{
+            margin: 170px auto ;
+        }
+        25%{
+            margin: 145px auto ;
+    
+        }
+        50%{
+            margin: 170px auto ;
+        }
+        75%{
+    
+            margin: 145px auto ;
+        }
+        100%{
+            margin: 170px auto ;
+    
+        }
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .main{
+        width: 770px;
+    }
+    .gourment{
+        margin-left: 110px;
+        grid-area: gourment;
+        width: 960px;
+    }
+    .carhartt{
+        grid-area: carhartt;
+        margin-left: 110px;
+        height: 330px;
+        width: 460px;
+    }
+    .adidas{
+        grid-area: adidas;
+        width: 470px;
+        height: 330px;
+     
+    }
+    .tendeep{
+        grid-area: tendeep;
+        height: 330px;
+        width: 460px;
+        margin-left: 110px;
+    }
+    .palace{
+        grid-area: palace;
+        height: 330px;
+        width: 470px;
+    }
+    .techpack{
+        grid-area: techpack;
+        height: 330px;
+        width: 460px;
+        margin-left: 110px;
+    }
+    .shops{
+        margin-left: 40px;
+        width: 980px;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-areas:
+         "gourment gourment "
+         "carhartt adidas"
+         "tendeep palace "
+         "techpack ."
+        ;
+    }
+
+    .contnent {
+        margin-top: 50px;
+        margin-left: 150px;
+        width: 950px;
+        grid-template-columns: repeat(3, 256px);
+        grid-template-rows: repeat(3, 256px);
+        grid-template-areas: 
+        "tovar1 tovar2 tovar3"
+        "tovar4 tovar5 tovar6"
+        "tovar7 tovar8 .";
+    }
+    .footer{
+        height: 40px;  
+        width: 950px;
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .menu-footer{
+        grid-column-start: 1;
+    }
+    .white{
+        position: relative;
+        top: 300px;
+        left: 293px;
+        font-size: 26px;
+        letter-spacing: 8px;
+    }
+    .red{
+        width: 300px;
+        position: relative;
+        top: 317px;
+        left: 277px;
+        font-size: 18px;
+        letter-spacing: 10PX;
+    }
+    .kartockhi2{
+        margin-top: 230px;
+    }
+}
+@media (max-width: 780px){
+    .header{
+        width: 100%;
+        height: 420px;
+        background-size: contain;
+    }
+    .header_menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .strelka{
+        height: 70px;
+        width: 70px;
+    }
+    @keyframes strelka {
+        0%{
+            margin: 130px auto ;
+        }
+        25%{
+            margin: 105px auto ;
+    
+        }
+        50%{
+            margin: 130px auto ;
+        }
+        75%{
+    
+            margin: 105px auto ;
+        }
+        100%{
+            margin: 130px auto ;
+    
+        }
+    }
+    .logo img {
+        margin: 10px auto;
+        width: 140px;
+        height: 60px;
+    }
+    .main{
+        padding-top: 30px;
+    }
+    .menu{
+        margin: 30px auto;
+        height: 20px;
+        width: 615px;
+    }
+    .partMenu{
+        font-size: 14px;
+    }
+    .text-block{
+        margin: 25px auto;
+        width: 350px;
+        height: 30px;
+    }
+    .text span{
+        font-size: 21px;
+    }
+    .text{
+        margin: 0;
+    }
+    .kartockhi1{
+        font-size: 26px;
+    }
+    .kartockhi2{
+        margin-top: 290px;
+    }
+    .kartockhi3{
+        margin-top: 280px;
+    }
+    .kartockhi4{
+        margin-top: 290px;
+    }
+    .kartockhi5{
+        margin-top: 310px;
+    }
+   .mobile-size{
+        margin: 0;
+        width: 600px;
+        height: 400px;
+   }
+    .shops{
+        margin: 0 auto;
+        grid-template-columns: 600px;
+        width: 600px;
+        height: 2471px;
+        display: grid;
+        grid-template-rows: repeat(1fr, 6) ;
+        grid-gap: 15px;
+        grid-template-areas:
+        "gourment"
+        "carhartt" 
+        "adidas"
+        "tendeep"
+        "palace "
+        "techpack "
+        ;
+    }
+    .contnent {
+        padding-top: 50px;
+        margin: 0 auto;
+        width: 600px;
+        grid-template-columns: 600px;
+        grid-template-rows: repeat(8, 400px);
+        grid-template-areas: 
+        "tovar1" 
+        "tovar2" 
+        "tovar3"
+        "tovar4" 
+        "tovar5" 
+        "tovar6"
+        "tovar7" 
+        "tovar8";
+    }
+    .red{
+        position: relative;
+        top: 1320px;
+        left:200px;
+        font-size: 14px;
+    }
+    .white{
+        position: relative;
+        top: 1310px;
+        left:205px;
+        font-size: 20px;
+    }
+    .footer{
+        margin-left:160px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;  
+        width: 570px;
+    }
+    .partMenu-footer{
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .a{grid-area: a;}
+    .b{grid-area: b;}
+    .c{grid-area: c;}
+    .d{grid-area: d;}
+    .e{grid-area: e;}
+    .f{grid-area: f;}
+    .menu-footer{
+        margin-left: 0 auto;
+        width: 400px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "a b c d"
+        ". e f .";
+    }
+    .icons{
+        margin-top:20px;
+        width: 120px;
+    }
+    .f, .e {
+        margin-top:5px;
+    }
+}
+
+@media (max-width: 342px){
+    .header_menu{
+        margin-left: 0px;
+        width: 300px;   
+    }
+    .main{
+        padding-top: 0px;
+        margin: 0 auto;
+        width: 320px;
+    }
+    .menu{
+        margin: 20px auto;
+        width: 180px;
+        height: 40px;
+        grid-column-gap:5px;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        grid-template-areas: 
+        "pm1 pm2 pm3"
+        "pm4 . pm5";
+    }
+    .pM1{grid-area: pm1;}
+    .pM2{grid-area: pm2;}
+    .pM3{grid-area: pm3;}
+    .pM4{grid-area: pm4;
+        width: 30px;}
+    .pM5{grid-area: pm5;
+       grid-column-start: 2;
+    width: 111px;}
+    .strelka{
+        width: 40px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+    @keyframes strelka {
+        0%{
+            margin: 10px auto ;
+        }
+        25%{
+            margin: 25px auto ;
+    
+        }
+        50%{
+            margin: 10px auto ;
+        }
+        75%{
+    
+            margin: 25px auto ;
+        }
+        100%{
+            margin: 10px auto ;
+    
+        }
+    }
+    .text-block{
+        margin: 0 auto;
+    }
+    .text{
+        margin: -17px auto;
+        width: 135px;
+        height: 50px;
+    }
+    .text span{
+        font-size: 10px;
+    }
+    .partMenu{
+        font-size: 8px;
+    }
+    .header{
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logo img{
+        margin: 10px auto;
+        height: 35px;
+        width: 85px;
+    }
+    .logo{
+        margin: 0 auto;
+        height: 40px;
+        width: 35px;
+    }
+    .kartockhi2{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .kartockhi1{
+        font-size: 15px;
+        margin-top: 90px;
+    }
+    .kartockhi3{
+        font-size: 15px;
+        margin-top: 90px;
+    }
+    .kartockhi4{
+        font-size: 15px;
+        margin-top: 110px;
+    }
+    .kartockhi5{
+        font-size: 15px;
+        margin-top: 120px;
+    }
+   
+  
+    .mobile-size{
+        width: 300px;
+        height: 200px;
+    }
+    .shops{
+        width: 300px;
+        height: 1250px;
+        display: grid;
+        grid-template-columns: auto;  
+        grid-template-areas:
+        "gourment"
+        "carhartt" 
+        "adidas"
+        "tendeep"
+        "palace"
+        "techpack ";
+    }
+    .contnent {
+        width: 300px;
+        height: 1580px;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas: 
+        "tovar1" 
+        "tovar2" 
+        "tovar3"
+        "tovar4" 
+        "tovar5" 
+        "tovar6"
+        "tovar7" 
+        "tovar8";
+    }
+    .menu-footer{
+        height: 50px;
+        width: 300px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a . b"
+        "c d e"
+        ". f .";
+    }
+    .partMenu-footer{
+        font-size: 12px;
+    }
+    .footer{
+        margin: 0 auto;
+        width: 300px;
+    }
+    .red{
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        width: 200px;
+        left: 50px;
+        top: 675px;
+    }
+    .white{
+        position: relative;
+        left: 80px;
+        top: 663px;
+        font-size: 14px;
+    }
+    .c{
+        margin-left: 20px;
+    }
+    .d{
+        margin-left: 15px;
+    }
+    .e{
+        margin-left: -5px;
+    }
+    .f,.e{
+        margin-top: 0px;
+    }
+    .f{
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+    .a{
+        margin-left: -30px;
+        grid-column-start: 1;
+        grid-column-start: 3;
+    }
+    .b{
+        margin-left: -40px;
+        grid-column-start: 3;
+    }
+    .icons{
+        margin: 10px auto;
+    }
+}
+
+
+
+
